@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 
 export function CvSection() {
   return (
-    <section id="competences" className="relative pt-16 pb-24 px-6 bg-card/50">
+    <section id="competences" className="relative pt-16 pb-24 px-6">
     
       <div className="max-w-5xl mx-auto">
         <motion.div

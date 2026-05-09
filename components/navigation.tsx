@@ -20,7 +20,7 @@ export function Navigation() {
         
         {/* Logo */}
         <Link href="/" className="group flex items-center gap-2.5">
-          <span className="font-display text-2xl font-semibold text-white">
+          <span className="font-bebas-heading text-2xl md:text-3xl leading-none font-normal text-white">
             Sarah L. <span className="text-primary">Machet</span>
           </span>
         </Link>
@@ -40,7 +40,7 @@ export function Navigation() {
               >
                 {link.label}
 
-                <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-primary transition-all duration-300 group-hover:w-full" />
+                <span className="absolute -bottom-1 left-0 w-0 h-px bg-primary transition-all duration-300 group-hover:w-full" />
               </Link>
             </motion.li>
           ))}

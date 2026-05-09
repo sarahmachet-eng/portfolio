@@ -141,3 +141,10 @@
 .kawaii-sparkle {
   text-shadow: 0 0 14px oklch(0.72 0.2 315 / 0.45);
 }
+
+/* Aligné sur les titres de section (Bebas Neue via layout) */
+.font-bebas-heading {
+  font-family: var(--font-bebas), sans-serif;
+  letter-spacing: 0.04em;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.08);
+}
