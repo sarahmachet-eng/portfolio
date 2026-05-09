@@ -1,43 +1,16 @@
 "use client"
 
-import { useEffect, useState } from "react"
 import { motion } from "framer-motion"
 import Image from "next/image"
+import { SectionStars } from "@/components/section-stars"
 
 export function HeroSection() {
-  // ✅ On génère les étoiles uniquement côté client
-  const [stars, setStars] = useState<
-    { top: string; left: string; delay: string }[]
-  >([])
-
-  useEffect(() => {
-    const generated = Array.from({ length: 80 }, () => ({
-      top: `${Math.random() * 100}%`,
-      left: `${Math.random() * 100}%`,
-      delay: `${Math.random() * 5}s`,
-    }))
-    setStars(generated)
-  }, [])
-
   return (
     <section
       id="accueil"
       className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20"
     >
-      {/* Fond étoilé (généré uniquement côté client) */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {stars.map((s, i) => (
-          <div
-            key={i}
-            className="absolute w-[2px] h-[2px] bg-white rounded-full opacity-30 animate-pulse"
-            style={{
-              top: s.top,
-              left: s.left,
-              animationDelay: s.delay,
-            }}
-          />
-        ))}
-      </div>
+      <SectionStars density={80} />
 
       {/* Contenu principal */}
       <div className="relative z-10 max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">

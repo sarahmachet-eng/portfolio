@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import Image from "next/image"
+import { SectionStars } from "@/components/section-stars"
 
 const skills = [
   { name: "Illustration", level: 95 },
@@ -21,8 +22,9 @@ const tools = [
 
 export function AboutSection() {
   return (
-    <section id="apropos" className="py-24 px-6 bg-card/50">
-      <div className="max-w-6xl mx-auto">
+    <section id="apropos" className="relative overflow-hidden py-24 px-6 bg-card/50">
+      <SectionStars density={50} />
+      <div className="relative z-10 max-w-6xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Image Side */}
           <motion.div

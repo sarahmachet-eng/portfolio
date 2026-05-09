@@ -2,10 +2,11 @@
 
 import { motion } from "framer-motion"
 import { Mail } from "lucide-react"
+import { SectionStars } from "@/components/section-stars"
 
 /** Remplace par tes liens */
 const MAIL_HREF = "mailto:sarah.machet@gmail.com"
-const LINKEDIN_HREF = "www.linkedin.com/in/sarah-louise-machet-04a5b63a0"
+const LINKEDIN_HREF = "https://www.linkedin.com/in/sarah-louise-machet-04a5b63a0"
 const BEHANCE_HREF = "https://www.behance.net/gallery/249053433/Portfolio"
 
 /** Logo LinkedIn officiel (marque dans le carré arrondi) */
@@ -42,12 +43,16 @@ const iconLinkClass =
 
 export function ContactSection() {
   return (
-    <section id="contact" className="py-20 px-6 max-w-3xl mx-auto">
+    <section
+      id="contact"
+      className="relative overflow-hidden py-20 px-6 max-w-3xl mx-auto w-full"
+    >
+      <SectionStars density={40} />
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3 }}
-        className="text-4xl md:text-6xl lg:text-7xl mb-6 leading-none uppercase text-center"
+        className="relative z-10 text-4xl md:text-6xl lg:text-7xl mb-6 leading-none uppercase text-center"
         style={{
           fontFamily: "var(--font-bebas)",
           letterSpacing: "0.04em",
@@ -57,11 +62,11 @@ export function ContactSection() {
         <span className="text-white">Me </span>
         <span className="text-primary">Contacter</span>
       </motion.h2>
-      <p className="text-muted-foreground text-center mb-10 max-w-md mx-auto text-pretty">
+      <p className="relative z-10 text-muted-foreground text-center mb-10 max-w-md mx-auto text-pretty">
         Retrouvez-moi sur mes réseaux sociaux.
       </p>
 
-      <div className="flex flex-wrap gap-6 justify-center items-center">
+      <div className="relative z-10 flex flex-wrap gap-6 justify-center items-center">
         <a
           href={MAIL_HREF}
           className={iconLinkClass}

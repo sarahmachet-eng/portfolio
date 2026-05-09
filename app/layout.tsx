@@ -30,25 +30,12 @@ const inter = Inter({
 
 
 export const metadata: Metadata = {
-  title: 'Sarah-L. | Creative Designer & Illustrator',
-  description: 'Portfolio kawaii goth - Illustrations, visuels, design d\'applications et sites web',
-  generator: 'v0.app',
+  title: 'Sarah L. | Graphic designer',
+  description:
+    'Portfolio — design graphique, illustrations et identités visuelles.',
   icons: {
-    icon: [
-      {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
-    ],
-    apple: '/apple-icon.png',
+    icon: [{ url: '/icon.svg', type: 'image/svg+xml' }],
+    apple: '/icon.svg',
   },
 }
 

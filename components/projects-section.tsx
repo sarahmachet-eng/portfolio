@@ -9,6 +9,7 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog"
+import { SectionStars } from "@/components/section-stars"
 
 const tools = [
   "Photoshop",
@@ -57,14 +58,9 @@ export function ProjectsSection() {
   const [lightboxProject, setLightboxProject] = useState<Project | null>(null)
 
   return (
-    <section id="projets" className="relative py-24 px-6">
-      <motion.span
-        className="pointer-events-none absolute left-8 mt-4 text-primary/70 text-2xl kawaii-sparkle"
-        animate={{ y: [0, -8, 0], rotate: [0, -8, 8, 0] }}
-        transition={{ duration: 5, repeat: Infinity }}
-      >
-      </motion.span>
-      <div className="max-w-6xl mx-auto">
+    <section id="projets" className="relative overflow-hidden py-24 px-6">
+      <SectionStars density={52} />
+      <div className="relative z-10 max-w-6xl mx-auto">
         {/* Section Header */}
         <motion.h1
   initial={{ opacity: 0, y: 20 }}

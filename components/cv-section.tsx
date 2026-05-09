@@ -1,12 +1,13 @@
 "use client"
 
 import { motion } from "framer-motion"
+import { SectionStars } from "@/components/section-stars"
 
 export function CvSection() {
   return (
-    <section id="competences" className="relative pt-16 pb-24 px-6">
-    
-      <div className="max-w-5xl mx-auto">
+    <section id="competences" className="relative overflow-hidden pt-16 pb-24 px-6">
+      <SectionStars density={48} />
+      <div className="relative z-10 max-w-5xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
