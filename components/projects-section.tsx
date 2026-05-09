@@ -20,33 +20,34 @@ const tools = [
   "Canva",
 ]
 
+/** Remplace les .svg par tes exports (ex. project-1.jpg) dans public/images/ et mets à jour le chemin. */
 const projects = [
   {
     id: 1,
     title: "Site internet",
     description: "Création de site web pour un anniversaire",
-    image: "/images/project-1.jpg",
+    image: "/images/project-1.svg",
     tags: ["Développement web", "Cursor", "Responsive Design"],
   },
   {
     id: 2,
     title: "Groove App",
     description: "Création d'une mascotte pour une application de streaming de musique",
-    image: "/images/project-2.jpg",
+    image: "/images/project-2.svg",
     tags: ["UI Design", "Mobile App", "Character design"],
   },
   {
     id: 3,
     title: "Illustration",
     description: "Création de designs pour des prints",
-    image: "/images/project-3.jpg",
+    image: "/images/project-3.svg",
     tags: ["Illustration", "Graphisme"],
   },
   {
     id: 4,
     title: "Projet NexGen",
     description: "Identité visuelle complète pour un projet de site web",
-    image: "/images/project-4.jpg",
+    image: "/images/project-4.svg",
     tags: ["Branding", "Logo", "Identité visuelle"],
   },
 ]
