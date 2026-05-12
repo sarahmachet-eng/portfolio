@@ -27,8 +27,8 @@ export const metadata: Metadata = {
   description:
     'Portfolio — design graphique, illustrations et identités visuelles.',
   icons: {
-    icon: [{ url: '/icon.svg', type: 'image/svg+xml' }],
-    apple: '/icon.svg',
+    icon: [{ url: "/apple-icon.png", type: "image/png", sizes: "180x180" }],
+    apple: "/apple-icon.png",
   },
 }
 
