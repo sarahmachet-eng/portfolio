@@ -60,7 +60,7 @@ export function ProjectsSection() {
 
   return (
     <section id="projets" className="relative overflow-hidden py-24 px-6">
-      <SectionStars density={52} />
+      <SectionStars />
       <div className="relative z-10 max-w-6xl mx-auto">
         {/* Section Header */}
         <motion.h1
@@ -121,6 +121,7 @@ export function ProjectsSection() {
                   src={project.image}
                   alt=""
                   fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 576px"
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
                 <div className="pointer-events-none absolute inset-0 bg-linear-to-t from-card/80 via-transparent to-transparent" />

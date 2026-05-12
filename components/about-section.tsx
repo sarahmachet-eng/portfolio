@@ -23,7 +23,7 @@ const tools = [
 export function AboutSection() {
   return (
     <section id="apropos" className="relative overflow-hidden py-24 px-6 bg-card/50">
-      <SectionStars density={50} />
+      <SectionStars />
       <div className="relative z-10 max-w-6xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Image Side */}

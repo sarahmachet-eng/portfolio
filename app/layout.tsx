@@ -1,8 +1,7 @@
 
 
-import { Space_Grotesk, Bebas_Neue } from "next/font/google"
+import { Space_Grotesk, Bebas_Neue, Nunito } from "next/font/google"
 import type { Metadata } from 'next'
-import { Inter, Nunito } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
@@ -15,16 +14,10 @@ const bebas = Bebas_Neue({
   weight: "400",
   variable: "--font-bebas",
 })
-const nunito = Nunito({ 
+const nunito = Nunito({
   subsets: ["latin"],
-  variable: '--font-nunito',
-  display: 'swap',
-})
-
-const inter = Inter({
-  subsets: ["latin"],
-  variable: '--font-inter',
-  display: 'swap',
+  variable: "--font-nunito",
+  display: "swap",
 })
 
 
@@ -45,7 +38,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="fr" className={`${nunito.variable} ${inter.variable} bg-background`}>
+    <html lang="fr" className={`${nunito.variable} bg-background`}>
 <body className={`${spaceGrotesk.className} ${bebas.variable}`}>
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}

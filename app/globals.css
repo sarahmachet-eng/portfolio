@@ -43,7 +43,7 @@
 @theme inline {
   --font-sans: 'Nunito', 'Nunito Fallback', sans-serif;
   --font-mono: 'Geist Mono', 'Geist Mono Fallback';
-  --font-display: 'Inter', 'Nunito', sans-serif;
+  --font-display: 'Nunito', sans-serif;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -140,6 +140,51 @@
 
 .kawaii-sparkle {
   text-shadow: 0 0 14px oklch(0.72 0.2 315 / 0.45);
+}
+
+/* Starfield CSS-only (performance : évite useEffect + ~300 divs par page) */
+.section-starfield-hero {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  background-image:
+    radial-gradient(circle, rgba(255, 255, 255, 0.38) 1px, transparent 1.4px),
+    radial-gradient(circle, rgba(255, 255, 255, 0.22) 1px, transparent 1.6px),
+    radial-gradient(circle, rgba(255, 255, 255, 0.14) 1px, transparent 1.85px);
+  background-size: 100px 100px, 168px 168px, 232px 232px;
+  background-position: 0 0, 44px 72px, 88px 24px;
+  opacity: 0.78;
+  animation: starfield-twinkle 6s ease-in-out infinite alternate;
+}
+
+.section-starfield-soft {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  background-image:
+    radial-gradient(circle, rgba(255, 255, 255, 0.26) 1px, transparent 1.5px),
+    radial-gradient(circle, rgba(255, 255, 255, 0.12) 1px, transparent 1.75px);
+  background-size: 148px 148px, 208px 208px;
+  background-position: 0 0, 74px 52px;
+  opacity: 0.52;
+}
+
+@keyframes starfield-twinkle {
+  from {
+    opacity: 0.58;
+  }
+  to {
+    opacity: 0.84;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .section-starfield-hero {
+    animation: none;
+    opacity: 0.68;
+  }
 }
 
 /* Aligné sur les titres de section (Bebas Neue via layout) */

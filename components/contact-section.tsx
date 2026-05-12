@@ -47,7 +47,7 @@ export function ContactSection() {
       id="contact"
       className="relative overflow-hidden py-20 px-6 max-w-3xl mx-auto w-full"
     >
-      <SectionStars density={40} />
+      <SectionStars />
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}

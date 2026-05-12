@@ -10,7 +10,7 @@ export function HeroSection() {
       id="accueil"
       className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20"
     >
-      <SectionStars density={80} />
+      <SectionStars variant="hero" />
 
       {/* Contenu principal */}
       <div className="relative z-10 max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
