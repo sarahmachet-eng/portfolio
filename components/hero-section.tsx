@@ -13,13 +13,13 @@ export function HeroSection() {
       <SectionStars variant="hero" />
 
       {/* Contenu principal */}
-      <div className="relative z-10 max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-        {/* Texte */}
+      <div className="relative z-10 mx-auto grid max-w-6xl grid-cols-1 items-center gap-12 px-6 md:grid-cols-2">
+        {/* Texte — en 2e position sur mobile (order-2), colonne gauche sur md */}
         <motion.div
           initial={false}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-center md:text-left"
+          className="order-2 text-center md:order-1 md:text-left"
         >
           <motion.div
             initial={false}
@@ -101,12 +101,12 @@ export function HeroSection() {
           </motion.div>
         </motion.div>
 
-        {/* Image */}
+        {/* Image — au-dessus du texte sur mobile (order-1), colonne droite sur md */}
         <motion.div
           initial={false}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="flex justify-center"
+          className="order-1 flex justify-center md:order-2"
         >
           <Image
             src="/images/hero-avatar.png"
