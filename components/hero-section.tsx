@@ -16,13 +16,13 @@ export function HeroSection() {
       <div className="relative z-10 max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
         {/* Texte */}
         <motion.div
-          initial={{ opacity: 0, x: -50 }}
+          initial={false}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
           className="text-center md:text-left"
         >
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={false}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary/50 border border-border mb-6"
@@ -34,7 +34,7 @@ export function HeroSection() {
           </motion.div>
 
           <motion.h1
-            initial={{ opacity: 0, y: 20 }}
+            initial={false}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
             className="text-4xl md:text-6xl lg:text-7xl mb-6 leading-none uppercase"
@@ -51,7 +51,7 @@ export function HeroSection() {
           </motion.h1>
 
           <motion.p
-            initial={{ opacity: 0, y: 20 }}
+            initial={false}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
             className="text-lg text-muted-foreground mb-8 max-w-md mx-auto md:mx-0 text-pretty"
@@ -66,7 +66,7 @@ export function HeroSection() {
           </motion.p>
 
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={false}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5 }}
             className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start"
@@ -103,7 +103,7 @@ export function HeroSection() {
 
         {/* Image */}
         <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
+          initial={false}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           className="flex justify-center"
