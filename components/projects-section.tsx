@@ -45,7 +45,7 @@ const projects = [
   },
   {
     id: 4,
-    title: "Stickers Kuromi,
+    title: "Stickers Kuromi",
     description: "Planche de stickers Kuromi, un personnage kawaii",
     image: "/images/project-4.jpg",
     tags: ["Branding", "Logo", "Identité visuelle"],
