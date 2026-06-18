@@ -24,9 +24,9 @@ const tools = [
 const projects = [
   {
     id: 1,
-    title: "Site internet",
-    description: "Création de site web pour un anniversaire",
-    image: "/images/project-1.jpg",
+    title: "UI Design",
+    description: "Projet d'application sur le thème de la maladie d'Alzheimer",
+    image: "/images/project-1.png",
     tags: ["Développement web", "Cursor", "Responsive Design"],
   },
   {
@@ -45,8 +45,8 @@ const projects = [
   },
   {
     id: 4,
-    title: "Projet NexGen",
-    description: "Identité visuelle complète pour un projet de site web",
+    title: "Stickers Kuromi,
+    description: "Planche de stickers Kuromi, un personnage kawaii",
     image: "/images/project-4.jpg",
     tags: ["Branding", "Logo", "Identité visuelle"],
   },
