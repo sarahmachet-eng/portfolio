@@ -27,7 +27,7 @@ const projects = [
     title: "UI Design",
     description: "Projet d'application sur le thème de la maladie d'Alzheimer",
     image: "/images/project-1.png",
-    tags: ["Développement web", "Cursor", "Responsive Design"],
+    tags: ["UI Design", "Branding", "Logo", "Identité visuelle","Character design"],
   },
   {
     id: 2,
@@ -48,7 +48,7 @@ const projects = [
     title: "Stickers Kuromi",
     description: "Planche de stickers Kuromi, un personnage kawaii",
     image: "/images/project-4.jpg",
-    tags: ["Branding", "Logo", "Identité visuelle"],
+    tags: ["Illustration", "Graphisme"],
   },
 ]
 
